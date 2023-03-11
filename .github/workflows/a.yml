@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: li1ht2ay-3es/rn1-pr2pa3k@build_windows
+      - uses: li1ht2ay-3es/rn1-pr2pa3k@build-windows
         with:
           token: ${{ secrets.token }}
           arch: ${{ matrix.arch }}
