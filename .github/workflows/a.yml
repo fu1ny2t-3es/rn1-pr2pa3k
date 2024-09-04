@@ -5,17 +5,18 @@ on:
 
 jobs:
 
-  build_windows:
+  build:
     strategy:
       matrix:
-        arch: [x86, x64]
+        # arch: [x86, x64]
+        arch: [x86]
       fail-fast: false
 
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: li1ht2ay-3es/rn1-pr2pa3k@build-windows
+      - uses: fu1ny2t-3es/rn1-pr2pa3k@build-windows
         with:
           token: ${{ secrets.token }}
           arch: ${{ matrix.arch }}
