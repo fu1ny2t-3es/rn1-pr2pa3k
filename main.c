@@ -444,7 +444,7 @@ int find_matches(vars_t *v)
             if (max_count > v->max_matches)
                 max_count = v->max_matches;
 
-            if (max_count >= v->match_count)
+            if ((max_count > v->match_count) || ((max_count == v->match_count) && (max_count < v->max_matches)))
             {
                 v->match_count = max_count;
                 v->match_offset = min_offset;
